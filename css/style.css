@@ -1,34 +1,54 @@
 body {
-	background-color: #333;  
-	color: #999;
+	/* Background Color */
+	background-color: #e9fbff;
+
+	/* Font Color and Style*/
+	color: #333;
 	font: 12px/1.4em Arial,sans-serif;
 }
+
+/*
+ This is used on the div which encompass' eveything on website.
+ * Put every content no website inside a rectangular box
+ 
 #wrap {
-   margin: 10px auto;        
-   background: #666;
+   margin: 20px auto;        
+   background: #50f96c;
    padding: 10px;
-   width: 700px;
-}
+   width: 90vw;
+}*/
+
+/* The header before any scrolling occurs */
 #header {
-   background-color: #666;
-   color: #FFF;
+   background-color: #55ea25;
+   color: #ea25d8;
 }
+
+/* Used for the title of the webpage */
 #logo {
    font-size: 30px;  
    line-height: 40px;    
    padding: 5px;
 }
+
+/* The height of the menu bar when scrolling occurs */
 #navWrap {
    height: 30px;
 }
+
+/* The Color of the menu bar when scrolling */
 #nav {
    padding: 5px;
-   background: #999;    
+   background: #1f2bbf;    
 }
+
+/* Bring all menu items to right most side of bar */
 #nav ul {
    margin: 0;
    padding: 0;    
 }
+
+/* Background boxes for every element in menu*/
 #nav li {
    float: left;
    padding: 3px 8px;
@@ -37,14 +57,3 @@ body {
    color: #F00;
    list-style-type: none;
 }
-#nav li a {
-   color: #F00;  
-   text-decoration: none;    
-}
-#nav li a:hover {
-   text-decoration: underline;   
-}
-br.clearLeft {
-   clear: left;        
-}​
-
