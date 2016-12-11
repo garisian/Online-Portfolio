@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
 body {
 	/* Background Color */
 	background-color: #e9fbff;
@@ -19,8 +21,9 @@ body {
 }*/
 
 /* The header before any scrolling occurs */
+
 #header {
-   background-color: #55ea25;
+   background-color: #3fa46a;
    color: #ea25d8;
 }
 
@@ -31,29 +34,34 @@ body {
    padding: 5px;
 }
 
-/* The height of the menu bar when scrolling occurs */
-#navWrap {
-   height: 30px;
+
+nav {
+  margin-top: 5px;
+  padding: 24px;
+  text-align: center;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#nav-1 {
+  background: #3fa46a;
 }
 
-/* The Color of the menu bar when scrolling */
-#nav {
-   padding: 5px;
-   background: #1f2bbf;    
+
+/* Used for the animation effects of scrolling over Menu Items */
+.link-1 {
+  transition: 0.3s ease;
+  background: #3fa46a;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 0px solid #3fa46a;
+  border-bottom: 0px solid #3fa46a;
+  padding: 20px 0;
+  margin: 0 20px;
+}
+.link-1:hover {
+  border-top: 3px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0; 
 }
 
-/* Bring all menu items to right most side of bar */
-#nav ul {
-   margin: 0;
-   padding: 0;    
-}
-
-/* Background boxes for every element in menu*/
-#nav li {
-   float: left;
-   padding: 3px 8px;
-   background-color: #FFF;
-   margin: 0 10px 0 0;
-   color: #F00;
-   list-style-type: none;
-}
