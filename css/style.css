@@ -41,11 +41,8 @@ nav {
   text-align: center;
   font-family: Raleway;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-}
-#nav-1 {
   background: #3fa46a;
 }
-
 
 /* Used for the animation effects of scrolling over Menu Items */
 .link-1 {
