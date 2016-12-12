@@ -3,7 +3,6 @@
 body {
 	/* Background Color */
 	background-color: #e9fbff;
-
 	/* Font Color and Style*/
 	color: #333;
 	font: 12px/1.4em Arial,sans-serif;
@@ -29,6 +28,7 @@ body {
 
 /* Used for the title of the webpage */
 #logo {
+   background-color: #eeeeee;
    font-size: 30px;  
    line-height: 40px;    
    padding: 5px;

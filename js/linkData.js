@@ -2,9 +2,9 @@
 //<![CDATA[
 
 
+/* Keep Toolbar At Top Of Site*/
 $(window).load(function(){
 
-    /* Keep Toolbar At Top Of Site*/
     $(function() {
         var nav = $('#nav');
         var navHomeY = nav.offset().top;
@@ -29,10 +29,11 @@ $(window).load(function(){
                 });
                 isFixed = false;
             }
+
         });
     });
 
-
+/* add below here*/
 /**
 ************************************************************
 *** THIS IS THE ADD-IN SMOOTH SCROLLING CODE ***************
