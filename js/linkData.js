@@ -25,7 +25,9 @@ $(window).load(function(){
             else if (!shouldBeFixed && isFixed)
             {
                 nav.css({
-                    position: 'static'
+                    position: 'relative',
+                    top: '45vh',
+                    left: '0',
                 });
                 isFixed = false;
             }
