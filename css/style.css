@@ -25,6 +25,12 @@ body {
    background-color: #eeeeee;
    color: #ea25d8;
    height: 100vh;
+   background-image: url("../images/cartoonSkyline.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Used for the title of the webpage */
