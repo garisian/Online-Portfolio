@@ -2,7 +2,7 @@
 $(window).load(function(){
 
     $(function() {
-        var nav = $('#nav');
+        var nav = $('.navigationMenu');
         var navHomeY = nav.offset().top;
         var isFixed = false;
         var $w = $(window);
@@ -91,7 +91,9 @@ function adjustLayout(){
         var newX = panelWidth * index;
         $(this).css('left',newX+'px');
 
-        var newLabel = $(this).find('.label').html();
+        var newLabel = $(this).find('.TimelineEventDate').html();
         $('.animatedTimeline nav').append('<a href="#">'+newLabel+'</a>');
     });
+    
 }
+
