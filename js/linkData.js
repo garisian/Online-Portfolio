@@ -1,8 +1,4 @@
-
-//<![CDATA[
-
-
-/* Keep Toolbar At Top Of Site*/
+/* Keep Toolbar At Top Of Site when scrolling*/
 $(window).load(function(){
 
     $(function() {
@@ -35,7 +31,7 @@ $(window).load(function(){
         });
     });
 
-/* add below here*/
+
 /**
 ************************************************************
 *** THIS IS THE ADD-IN SMOOTH SCROLLING CODE ***************
