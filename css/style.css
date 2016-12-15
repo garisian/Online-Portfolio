@@ -83,7 +83,18 @@ body {
 
 
 /* Used to format timeline elements */
+.timelineEvent
+{
 
+  /*background-image: url("../images/cartoonMountain.jpg");*/
+  position: absolute;
+}
+
+.animatedTimeline
+{
+    height: 60vh;
+  background-image: url("../images/cartoonMountain.jpg");
+}
 
 .animatedTimeline .timelineEvent
 {

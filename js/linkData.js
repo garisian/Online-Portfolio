@@ -29,6 +29,13 @@ $(window).load(function(){
             }
 
         });
+
+        $(function(){
+            panelWidth = $('.animatedTimeline .timelineEvent').width();
+            timelineWidth = $('.animatedTimeline').width();
+            totalPanel = $('.animatedTimeline .timelineEvent').length;
+            adjustLayout();
+        });
     });
 
 
@@ -77,3 +84,14 @@ jQuery(function($){ $.localScroll({filter:'.smoothScroll'}); });
 
 
 });//]]>  
+
+function adjustLayout(){
+    $('.animatedTimeline .timelineEvent').each(function(index){
+        /* lay out on horizontal */
+        var newX = panelWidth * index;
+        $(this).css('left',newX+'px');
+
+        var newLabel = $(this).find('.label').html();
+        $('.animatedTimeline nav').append('<a href="#">'+newLabel+'</a>');
+    });
+}
