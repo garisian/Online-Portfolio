@@ -30,14 +30,14 @@ $(window).load(function(){
 
         });
 
+
+    });
         $(function(){
             panelWidth = $('.animatedTimeline .timelineEvent').width();
             timelineWidth = $('.animatedTimeline').width();
             totalPanel = $('.animatedTimeline .timelineEvent').length;
             adjustLayout();
         });
-    });
-
 
 /**
 ************************************************************

@@ -51,7 +51,11 @@ body {
 }
 
 /* Mainly used for the menu bar and it's positioning at the top of the page */
-.navigationMenu {
+.navigationMenu 
+{
+  /* z-index to display on top of timeline */
+  z-index: 1000;
+
   position: relative;
   top:45vh;
   margin-top: 5px;
@@ -85,21 +89,20 @@ body {
 /* Used to format timeline elements */
 .timelineEvent
 {
-
   /*background-image: url("../images/cartoonMountain.jpg");*/
-  position: absolute;
+  /*position: absolute;*/
 }
-
+/*
 .animatedTimeline
 {
-    height: 60vh;
+  height: 60vh;
   background-image: url("../images/cartoonMountain.jpg");
 }
 
 .animatedTimeline .timelineEvent
 {
   width:25vw;
-  display: inline-block;
+ 
 }
 
 .animatedTimeline .TimelineEventDescription
@@ -118,5 +121,34 @@ body {
 }
 
 .animatedTimeline nav{
-  position: inline-block;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+  width: inherit;
+}
+*/
+
+/* Get In Touch Page */
+.mailbox
+{
+   height: 100vh;
+   /* Following elements fix the background pic and give the overlay scrolling effect */
+   background-image: url("../images/cartoonRiver.jpg");
+}
+
+
+/* Fancy art name In Get In Touch Section */
+#getInTouchImage
+{
+  position: relative;
+  top:15vh;
+}
+
+.emailMe
+{
+   position: relative;
+   top: 10vw; 
+   left: 60vh;
+   bottom: 0; 
+   right: 0;
 }
