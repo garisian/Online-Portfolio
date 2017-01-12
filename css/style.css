@@ -144,6 +144,7 @@ body {
   top:15vh;
 }
 
+/* Positioning of the table of First Name, Last Name, etc*/
 #getInTouchTable
 {   width:300px;
     height:300px;
@@ -155,11 +156,26 @@ body {
     left:50%;
 }
 
-.emailMe
+/* Make Elements in Get In Touch transparent to background image. Lighter Transparency*/
+input[type="text"]
 {
-   position: relative;
-   top: 10vw; 
-   left: 60vh;
-   bottom: 0; 
-   right: 0;
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+    filter: alpha(opacity=50);  /* IE 5-7 */
+    -moz-opacity: 0.5;          /* Netscape */
+    -khtml-opacity: 0.5;        /* Safari 1.x */
+    opacity: 0.5;               /* Good browsers */
 }
+
+/* Make TextArea in Get In Touch transparent to background image. Lighter Transparency*/
+textarea
+{
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+    filter: alpha(opacity=50);  /* IE 5-7 */
+    -moz-opacity: 0.5;          /* Netscape */
+    -khtml-opacity: 0.5;        /* Safari 1.x */
+    opacity: 0.5;               /* Good browsers */
+
+}
+
