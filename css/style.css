@@ -26,7 +26,8 @@ body {
    color: #ea25d8;
    height: 100vh;
    /* Following elements fix the background pic and give the overlay scrolling effect */
-   background-image: url("../images/cartoonSkyline.jpg");
+   /*background-image: url("../images/cartoonSkyline.jpg");*/
+   background-image: url("../images/titleSeason.jpg");
    min-height: 500px;
    background-attachment: fixed;
    background-position: center;
@@ -128,21 +129,111 @@ body {
 }
 */
 
-/* Get In Touch Page */
+/* CENTER TITLE FOR EVERY IMAGE ON EACH PAGE */
+
+#centerSubTitles
+{
+  position: relative;
+  top:15vh;
+} 
+
+/* BLOG ELEMENTS */
+.blogTime
+{
+   height: 100vh;
+   /* Following elements fix the background pic and give the overlay scrolling effect */
+   background-image: url("../images/springSeason.png");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* TIMELINE ELEMENTS */
+.animatedTimeline
+{
+   /* Following elements fix the background pic and give the overlay scrolling effect */
+   background-image: url("../images/summerSeason.png");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* HOBBIES ELEMENTS */
+.hobbiesTime
+{
+   height: 100vh;
+   /* Following elements fix the background pic and give the overlay scrolling effect */
+   background-image: url("../images/fallSeason.png");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* SPORTS ELEMENTS */
+.sportsTime
+{
+   height: 100vh;
+   /* Following elements fix the background pic and give the overlay scrolling effect */
+   background-image: url("../images/winterSeason.png");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* WORK ELEMENTS*/
+.workTime
+{
+   height: 100vh;
+   /* Following elements fix the background pic and give the overlay scrolling effect */
+   background-image: url("../images/springSeason2.png");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* GITHUB ELEMENTS*/
+.githubTime
+{
+   height: 100vh;
+   /* Following elements fix the background pic and give the overlay scrolling effect */
+   background-image: url("../images/summerSeason2.png");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* CONNECT ELEMENTS*/
+.connectTime
+{
+   height: 100vh;
+   /* Following elements fix the background pic and give the overlay scrolling effect */
+   background-image: url("../images/fallSeason2.png");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* GET IN TOUCH ELEMENTS */
+
+/* Fancy art name In Get In Touch Section */
 .mailbox
 {
    height: 100vh;
    /* Following elements fix the background pic and give the overlay scrolling effect */
-   background-image: url("../images/cartoonRiver.jpg");
+   background-image: url("../images/winterSeason2.png");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
-
-/* Fancy art name In Get In Touch Section */
-#getInTouchImage
-{
-  position: relative;
-  top:15vh;
-}
 
 /* Positioning of the table of First Name, Last Name, etc*/
 #getInTouchTable
@@ -178,4 +269,5 @@ textarea
     opacity: 0.5;               /* Good browsers */
 
 }
+
 
