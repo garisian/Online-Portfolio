@@ -291,7 +291,7 @@ ul.connectElements li
     position:relative;
     margin-left:-19vw; /* half of width */
     margin-top:20vh;  /* half of height */
-    top:60%;
+    top:0%;
     left:50%;
 }
 

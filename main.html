@@ -9,6 +9,23 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
  
 	<script type='text/javascript' src="js/linkData.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(document).ready(function(){
+
+$('#submit').click(function(){
+
+$.post("php/sendEmail.php", $("#mycontactform").serialize(),  function(response) {   
+ $('#success').html(response);
+ //$('#success').hide('slow');
+});
+return false;
+
+
+});
+
+});
+</script>
 </head>
 <body>
 <a name="topOfPage"></a>
@@ -192,32 +209,19 @@
     <a name="getInTouch"></a>
     <div class="mailbox">
         <center><img id="centerSubTitles" src="https://images.cooltext.com/4858584.png" width="515" height="114" alt="Get In Touch" /></center>
-         <form name="contactform" method="post" action="php/sendEmail.php">
-              <table id="getInTouchTable" width="450px">
-                <tr>
-                  <td valign="top"><label for="first_name">First Name *</label></td>
-                  <td valign="top"><input class="transparentContactmeBox" type="text" name="first_name" maxlength="50" size="30"></td>
-                </tr>
-                <tr>
-                  <td valign="top"><label for="last_name">Last Name *</label></td>
-                  <td valign="top"><input class="transparentContactmeBox" type="text" name="last_name" maxlength="50" size="30"></td>
-                </tr>
-                <tr>
-                  <td valign="top"><label for="email">Email Address *</label></td>
-                  <td valign="top"><input class="transparentContactmeBox" type="text" name="email" maxlength="80" size="30"></td>
-                </tr>
-                <tr>
-                  <td valign="top"><label for="telephone">Telephone Number</label></td>
-                  <td valign="top"><input class="transparentContactmeBox" type="text" name="telephone" maxlength="30" size="30"></td>
-                </tr>
-                <tr>
-                  <td valign="top"><label for="comments">Comments *</label></td>
-                  <td valign="top"><textarea class="transparentContactmeBox" name="comments" maxlength="1000" cols="42" rows="6"></textarea></td>
-                </tr>
-                <tr><td colspan="2" style="text-align:center"> <input type="submit" value="Submit"></td>
-                </tr>
-              </table>
-            </form>
+         <form id="getInTouchTable" action="" method="post" id="mycontactform" >
+          <label for="first_name">First Name *</label><br />
+          <input class="transparentContactmeBox" type="text" name="first_name" maxlength="50" size="30"><br />
+          <label for="last_name">Last Name *</label><br />
+          <input class="transparentContactmeBox" type="text" name="last_name" maxlength="50" size="30"><br />
+          <label for="email">Email Address *</label><br />
+          <input class="transparentContactmeBox" type="text" name="email" maxlength="80" size="30"><br />
+          <label for="telephone">Telephone Number</label><br />
+          <input class="transparentContactmeBox" type="text" name="telephone" maxlength="30" size="30"><br />
+          <label for="comments">Comments *</label><br />
+          <textarea class="transparentContactmeBox" name="comments" maxlength="1000" cols="42" rows="6"></textarea><br />
+        <input type="button" value="Send" id="submit" /><div id="success" style="color:red;"></div>
+        </form>
     </div>
 
 </body>
