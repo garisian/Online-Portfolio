@@ -7,7 +7,7 @@ $first_name = $_POST['first_name']; // required
     $telephone = $_POST['telephone']; // not required
     $comments = $_POST['comments']; // required
     $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';      
 
   if(!preg_match($email_exp,$email_from)) { 
     $error_message .= 'Email Address, ';
@@ -26,19 +26,19 @@ $first_name = $_POST['first_name']; // required
   if(strlen($comments) < 2) {
     $error_message .= 'Comments, ';
   }
-
+  $error_message = "";
   if(strlen($error_message) > 0) {
-    echo "Invalid Entries. The following have errors: <br /> ".$error_message;
+    echo "Invalid Entries. The following have errors: <br />".$error_message;
   }
   else
   {
     $to = 'garisian22@gmail.com';
-  $subject = 'Email From Personal Profile';
-  $message = 'FROM: '.$first_name." ".$last_name.' Email: '.$email_from.'Message: '.$comments;
-  $headers = 'From: Website Yo' . "\r\n";
+    $subject = 'Email From Personal Profile';
+    $message = 'FROM: '.$first_name." ".$last_name.' Email: '.$email_from.'Message: '.$comments;
+    $headers = 'From: Website Yo' . "\r\n";
 
     
     mail($to, $subject, $message, $headers); //This method sends the mail.
-  echo "Your email was sent!"; // success message
+   echo "Your email was sent! $first_name"."-".$last_name."-".$email_from."-".$comments; // success message
   }
 ?>
