@@ -26,8 +26,8 @@ body {
    color: #ea25d8;
    height: 100vh;
    /* Following elements fix the background pic and give the overlay scrolling effect */
-   /*background-image: url("../images/cartoonSkyline.jpg");*/
-   background-image: url("../images/titleSeason.jpg");
+   background-image: url("../images/cartoonSkyline.jpg");
+   /*background-image: url("../images/titleSeason.jpg");*/
    min-height: 500px;
    background-attachment: fixed;
    background-position: center;
@@ -88,11 +88,11 @@ body {
 
 
 /* Used to format timeline elements */
-.timelineEvent
-{
+/*.timelineEvent*/
+/*{*/
   /*background-image: url("../images/cartoonMountain.jpg");*/
   /*position: absolute;*/
-}
+/*}*/
 /*
 .animatedTimeline
 {
@@ -137,10 +137,9 @@ body {
   top:15vh;
 } 
 
-/* BLOG ELEMENTS */
+/*  ================================ BLOG ELEMENTS ================================  */
 .blogTime
 {
-   height: 100vh;
    /* Following elements fix the background pic and give the overlay scrolling effect */
    background-image: url("../images/springSeason.png");
    background-attachment: fixed;
@@ -148,8 +147,21 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
 }
+div.blogText  
+{
 
-/* TIMELINE ELEMENTS */
+  color:    #00008B;
+  /*color: #424242;*/
+        font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+ letter-spacing:0.1em;
+ text-align:center;
+ text-transform: lowercase;
+ line-height: 145%;
+ font-size: 14pt;
+ font-variant: small-caps;
+}
+
+/*  ================================ TIMELINE ELEMENTS ================================  */
 .animatedTimeline
 {
    /* Following elements fix the background pic and give the overlay scrolling effect */
@@ -160,7 +172,7 @@ body {
    background-size: cover;
 }
 
-/* HOBBIES ELEMENTS */
+/* ================================  HOBBIES ELEMENTS ================================  */
 .hobbiesTime
 {
    height: 100vh;
@@ -172,7 +184,7 @@ body {
    background-size: cover;
 }
 
-/* SPORTS ELEMENTS */
+/*  ================================ SPORTS ELEMENTS ================================  */
 .sportsTime
 {
    height: 100vh;
@@ -184,7 +196,7 @@ body {
    background-size: cover;
 }
 
-/* WORK ELEMENTS*/
+/*  ================================ WORK ELEMENTS ================================ */
 .workTime
 {
    height: 100vh;
@@ -196,7 +208,7 @@ body {
    background-size: cover;
 }
 
-/* GITHUB ELEMENTS*/
+/*  ================================ GITHUB ELEMENTS ================================ */
 .githubTime
 {
    height: 100vh;
@@ -208,7 +220,7 @@ body {
    background-size: cover;
 }
 
-/* CONNECT ELEMENTS*/
+/* ================================ CONNECT ELEMENTS ================================ */
 .connectTime
 {
    height: 100vh;
@@ -219,8 +231,44 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
 }
+.connectIcons
+{
+  height: 10vh;
+}
 
-/* GET IN TOUCH ELEMENTS */
+div.connectDesc p
+{
+  position: relative;
+  color:brown;
+  top:25vh;
+  font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+  font-weight: normal;
+  font-size: 1.75em;
+  letter-spacing: .2em;
+  line-height: 1.1em;
+  margin:0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Get Rid of Bullet Points Before Each Element*/
+ul
+{
+    list-style-type: none;
+}
+
+/* Get all Logos to appear in a straight line*/
+ul.connectElements li
+{
+  width: auto;
+  float: left;
+  margin: 10px 30px;
+
+  position: relative;
+  top:45vh;
+}
+
+/* ================================  GET IN TOUCH ELEMENTS ================================  */
 
 /* Fancy art name In Get In Touch Section */
 .mailbox
@@ -270,4 +318,8 @@ textarea
 
 }
 
+div.mailbox label
+{
+  color: blue;
+}
 
