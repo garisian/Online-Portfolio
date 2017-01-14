@@ -1,11 +1,15 @@
 <?php
 
 // Here we get all the information from the fields sent over by the form.
-$first_name = $_POST['first_name']; // required
-    $last_name = $_POST['last_name']; // required
-    $email_from = $_POST['email']; // required
-    $telephone = $_POST['telephone']; // not required
-    $comments = $_POST['comments']; // required
+
+$first_name = $_POST['first_name'];
+$last_name = $_POST['last_name'];
+$telephone = $_POST['telephone'];
+$email_from = $_POST['email'];
+$comments = $_POST['message'];
+
+
+
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';      
 
@@ -26,7 +30,7 @@ $first_name = $_POST['first_name']; // required
   if(strlen($comments) < 2) {
     $error_message .= 'Comments, ';
   }
-  $error_message = "";
+
   if(strlen($error_message) > 0) {
     echo "Invalid Entries. The following have errors: <br />".$error_message;
   }
@@ -39,6 +43,7 @@ $first_name = $_POST['first_name']; // required
 
     
     mail($to, $subject, $message, $headers); //This method sends the mail.
-   echo "Your email was sent! $first_name"."-".$last_name."-".$email_from."-".$comments; // success message
+   echo "Your email was sent! $first_name"; // success message
   }
+
 ?>
