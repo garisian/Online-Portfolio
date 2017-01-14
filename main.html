@@ -22,7 +22,7 @@
             });
         });
     </script>
-
+     <script type='text/javascript' src="js/picRotatorWithButtons.js"></script>
 </head>
 <body>
 <a name="topOfPage"></a>
@@ -158,7 +158,25 @@
             </div>
         </div>
         <nav class="TimelineAllTimeSlots"></nav>
+
+        <!-- Slideshow with buttons  -->
+        <div class="buttonSlideShowImages" style="max-width:800px">
+          <img class="mySlides" src="images/img_nature_wide.jpg" style="width:100%; display: block;">
+          <img class="mySlides" src="images/img_fjords_wide.jpg" style="width:100%">
+          <img class="mySlides" src="images/img_mountains_wide.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-center">
+          <div class="w3-section">
+            <button class="previousAndNext" onclick="plusDivs(-1)">❮ Prev</button>
+            <button class="previousAndNext" onclick="plusDivs(1)">Next ❯</button>
+          </div>
+          <button class="buttonSlideSShowButtons" onclick="currentDiv(1)">1</button> 
+          <button class="buttonSlideSShowButtons" onclick="currentDiv(2)">2</button> 
+          <button class="buttonSlideSShowButtons" onclick="currentDiv(3)">3</button> 
+        </div>
     </div>
+
 
    
     <!-- =========================== HOBBIES STARTS HERE =========================== -->
@@ -171,6 +189,7 @@
     <a name="sports"></a>
     <div class="sportsTime">
         <center><img id="centerSubTitles" src="https://images.cooltext.com/4858598.png" width="336" height="125" alt="Sports" /></center>
+        <div class="sportsSliderIDClass" id="sportsSliderID"></div>
     </div>
 
     <!-- =========================== WORK STARTS HERE =========================== -->
