@@ -298,6 +298,7 @@ ul.connectElements li
 /* Make Elements in Get In Touch transparent to background image. Lighter Transparency*/
 input[type="text"]
 {
+  color: black;
     background: transparent;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
     filter: alpha(opacity=50);  /* IE 5-7 */

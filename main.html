@@ -8,7 +8,7 @@
   
   <link rel="stylesheet" type="text/css" href="css/style.css">
  
-	<script type='text/javascript' src="js/linkData.js"></script>
+    <script type='text/javascript' src="js/linkData.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     
     <script>
@@ -206,22 +206,36 @@
     <a name="getInTouch"></a>
     <div class="mailbox">
         <center><img id="centerSubTitles" src="https://images.cooltext.com/4858584.png" width="515" height="114" alt="Get In Touch" /></center>
-         
 
         <form action="" method="post" id="mycontactform" >
-        <label for="first_name">First Name:</label><br />
-        <input type="text" name="first_name" id="first_name" /><br />
-        <label for="last_name">Last Name:</label><br />
-        <input type="text" name="last_name" id="last_name" /><br />
-        <label for="telephone">Telephone:</label><br />
-        <input type="text" name="telephone" id="telephone" /><br />
-        <label for="email">Email:</label><br />
-        <input type="text" name="email" id="email" /><br />
-        <label for="message">Message:</label><br />
-        <textarea class="transparentContactmeBox" name="message" id="message" maxlength="1000" cols="42" rows="6"></textarea><br />
-        <input type="button" value="send" id="submit" /><div id="success" style="color:red;"></div>
+             <table id="getInTouchTable" width="450px">
+                    <tr>
+                        <td valign="top"><label class="getInTouchElements" for="first_name">First Name:</label></td>
+                        <td valign="top"><input class="getInTouchElements" type="text" name="first_name" id="first_name" /></td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><label class="getInTouchElements" for="last_name">Last Name:</label></td>
+                        <td valign="top"><input class="getInTouchElements" type="text" name="last_name" id="last_name" /></td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><label class="getInTouchElements" for="telephone">Telephone:</label></td>
+                        <td valign="top"><input class="getInTouchElements" type="text" name="telephone" id="telephone" /></td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><label class="getInTouchElements" for="email">Email:</label></td>
+                        <td valign="top"><input class="getInTouchElements" type="text" name="email" id="email" /></td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><label class="getInTouchElements" for="message">Message:</label></td>
+                        <td valign="top"><textarea class="transparentContactmeBox" name="message" id="message" maxlength="1000" cols="42" 
+                    rows="6"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td valign="top" colspan="2"><input type="button" value="Send" id="submit" /><div id="success" style="color:red;"></div></td>
+                    </tr>
+                </table>
         </form>
-         
+
     </div>
 
 </body>
