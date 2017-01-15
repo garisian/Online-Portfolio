@@ -140,8 +140,9 @@ body {
 /*  ================================ BLOG ELEMENTS ================================  */
 .blogTime
 {
+  height: 100vh;
    /* Following elements fix the background pic and give the overlay scrolling effect */
-   background-image: url("../images/springSeason.png");
+   background-image: url("../images/springSeason2.png");
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
@@ -165,7 +166,7 @@ div.blogText
 .animatedTimeline
 {
    /* Following elements fix the background pic and give the overlay scrolling effect */
-   background-image: url("../images/summerSeason.png");
+   background-image: url("../images/summerSeason2.png");
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
