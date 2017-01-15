@@ -165,12 +165,40 @@ div.blogText
 /*  ================================ TIMELINE ELEMENTS ================================  */
 .animatedTimeline
 {
+  height: 100vh;
    /* Following elements fix the background pic and give the overlay scrolling effect */
    background-image: url("../images/summerSeason2.png");
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+}
+
+.fullTimeline
+{
+    /* background-color:#d9d9d9; */
+    position:relative;
+    margin-left:-19vw; /* half of width */
+    margin-top:20vh;  /* half of height */
+    top:0%;
+    left:30%;
+}
+
+.w3-center
+{
+  position: relative;
+      top:0%;
+    left:25%;
+}
+
+.previousAndNext
+{
+    margin-top:10px;  
+}
+
+.buttonSlideSShowButtons
+{
+    margin-top:10px;  
 }
 
 
